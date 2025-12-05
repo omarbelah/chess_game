@@ -41,10 +41,7 @@ jobs:
         pip3 install pygame
         pip install -r requirements.txt
 
-    - name: Setup Flutter ${{ env.FLUTTER_VERSION }}
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: ${{ env.FLUTTER_VERSION }}
+
 
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.1
