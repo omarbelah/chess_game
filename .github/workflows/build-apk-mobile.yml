@@ -209,9 +209,9 @@ jobs:
       uses: actions/upload-artifact@v4.3.4
       with:
         name: apk-build-artifact
-        path: bin/chess.apk
+        path: build/app/outputs/apk/debug/*.apk
         if-no-files-found: warn
-        overwrite: false
+        overwrite: true
 
   build-ipa:
     runs-on: macos-latest
