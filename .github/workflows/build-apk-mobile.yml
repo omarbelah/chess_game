@@ -61,5 +61,10 @@ jobs:
         path: build/chess.apk
         if-no-files-found: warn
         overwrite: true
+    - run: flutter build apk 
+    - uses: actions/upload-artifact@v2
+      with:
+          name: Mono-release-apk
+          path: build/app/outputs/apk/release/app-release.apk
 
  
