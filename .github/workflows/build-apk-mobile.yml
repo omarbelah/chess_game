@@ -209,7 +209,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.4
       with:
         name: apk-build-artifact
-        path: build/app/outputs/apk/debug/*.apk
+        path: build/chess.apk
         if-no-files-found: warn
         overwrite: true
 
