@@ -111,12 +111,12 @@ jobs:
         with:
           python-version: '3.11' #set your python version
 
-      # Install pip3 dependencies
-      - name: Install pip3 dependencies
+      # Install pip dependencies
+      - name: Install pip dependencies
         run: |
-          pip3 install --upgrade pip3
-          pip3 install buildozer cython==3.0.11
-          pip3 install pygame
+          pip install --upgrade pip
+          pip install buildozer cython==3.0.11
+          pip install pygame
 
       # Build with Buildozer
       - name: Build with Buildozer
