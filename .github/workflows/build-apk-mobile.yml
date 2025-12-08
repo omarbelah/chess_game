@@ -134,7 +134,10 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython==3.0.11
           pip install pygame
-
+      - name: Clean buildozer cache to force full rebuild
+        run: |
+          rm -rf .buildozer
+          rm -rf .buildozer_global
       # Build with Buildozer
       - name: Build with Buildozer
         id: buildozer
