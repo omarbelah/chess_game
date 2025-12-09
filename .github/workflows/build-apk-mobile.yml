@@ -114,6 +114,9 @@ jobs:
       # Install pip dependencies
       - name: Install pip dependencies
         run: |
+          sudo apt-get update
+          # Install the distutils package for python3
+          sudo apt-get install -y python3-distutils python3-pip
           pip install --upgrade pip
           pip install --upgrade setuptools
           pip install buildozer cython==3.0.11
