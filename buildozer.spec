@@ -44,10 +44,10 @@ requirements =python3, pygame-ce, cython==3.0.11,  exceptiongroup, asynckivy, as
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/images/presplash.png
+#presplash.filename = %(source.dir)s/images/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/favicon.png
+#icon.filename = %(source.dir)s/images/favicon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
