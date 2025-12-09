@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements =python3, pygame-ce, cython,  exceptiongroup, asynckivy, asyncgui, materialyoucolor, android, materialshapes, pycairo
+requirements =python3, pygame-ce, cython==3.0.11,  exceptiongroup, asynckivy, asyncgui, materialyoucolor, android, materialshapes, pycairo
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
