@@ -117,7 +117,6 @@ jobs:
       # Install  dependencies
       - name: Install  dependencies
         run: |
-          sudo apt-get update
           # Install the distutils package for python3
            install --upgrade setuptools
            install buildozer cython==3.0.11
