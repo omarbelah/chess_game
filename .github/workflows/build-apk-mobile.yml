@@ -133,6 +133,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install buildozer cython==3.0.11
+          sudo apt-get install python3.10-distutils
           pip install pygame
       - name: Clean buildozer cache to force full rebuild
         run: |
