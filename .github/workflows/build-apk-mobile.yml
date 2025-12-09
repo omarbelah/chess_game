@@ -138,6 +138,7 @@ jobs:
         run: |
           rm -rf .buildozer
           rm -rf .buildozer_global
+          rm -rf /home/runner/work/chess_game/chess_game/.buildozer/android/platform/build-arm64-v8a/build/
       # Build with Buildozer
       - name: Build with Buildozer
         id: buildozer
