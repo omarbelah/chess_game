@@ -7,7 +7,7 @@ title = SampleApp
 package.name = nfsApk
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.sparda
+package.domain = org.novfensec
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,17 +37,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python, hostpython3==3.10.12, pygame,  android,  pycairo
+requirements = python3,pygame, kivy==2.3.1, https://github.com/kivymd/KivyMD/archive/master.zip, exceptiongroup, asynckivy, asyncgui, materialyoucolor, android, materialshapes, pycairo
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/images/presplash.png
+presplash.filename = %(source.dir)s/images/presplash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/images/favicon.png
+icon.filename = %(source.dir)s/images/favicon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -205,7 +205,7 @@ android.accept_sdk_license = True
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
-android.enable_androidx requires android.api >= 28
+# android.enable_androidx requires android.api >= 28
 #android.enable_androidx = True
 
 # (list) add java compile options
@@ -358,7 +358,7 @@ p4a.branch = develop
 #
 
 # (str) Path to a custom kivy-ios folder
-ios.kivy_ios_dir = ../kivy-ios
+#ios.kivy_ios_dir = ../kivy-ios
 # Alternately, specify the URL and branch of a git checkout:
 ios.kivy_ios_url = https://github.com/kivy/kivy-ios
 ios.kivy_ios_branch = master
